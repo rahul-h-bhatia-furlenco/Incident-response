@@ -27,6 +27,7 @@ SHOW PROFILES;
 SELECT state, ROUND(SUM(duration),5) AS `duration (summed) in sec` FROM information_schema.profiling WHERE query_id = 3 GROUP BY state ORDER BY `duration (summed) in sec` DESC; 
 SET PROFILING = 0; 
 EXPLAIN /* Your query again should appear here */; 
+```
 
 ****In case of pod in Kubernetes Cluster****:
 
