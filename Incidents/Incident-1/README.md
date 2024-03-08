@@ -15,6 +15,8 @@ A sample code is given in code/rds-cloudwatch-sns-slack.tf
 3. **Isolate Affected Services:** Determine whether the issue lies with the payment gateway service itself or if it's a broader issue affecting other components in the system. Isolate the affected services to prevent further impact on other parts of the system.
 
 4. **Root Cause Analysis (RCA):** Conduct a thorough investigation to identify the root cause(s) of the outage. Analyze logs from Splunk, performance metrics from New Relic, and resource utilization data from CloudWatch to pinpoint the underlying issue(s).
+
+
 ****In case of MYSQL DB****: 
 You can set a profiler, to check which query/Transaction in MYSQL is taking long, if there is any latency issue in DB Queries.
 
